@@ -7,12 +7,12 @@
 ros::NodeHandle nh;
 
 //Pins
-#define EN_M1  6;
-#define in1_M1 9;
-#define in2_M1 4;
-#define EN_M2 5;
-#define in1_M2 8;
-#define in2_M2 7;
+#define EN_M1 6
+#define in1_M1 9
+#define in2_M1 4
+#define EN_M2 5
+#define in1_M2 8
+#define in2_M2 7
 
 //Parameters
 const float Radius = 0.127;  //Radius
@@ -21,8 +21,8 @@ const float Length = 0.945;  //Length
 //Speed variables
 float left_speed = 0;
 float right_speed = 0;
-int = left_pwm = 0;
-int = right_pwm = 0;
+int  left_pwm = 0;
+int  right_pwm = 0;
 
 //Motor class
 class DCmotor
@@ -50,7 +50,7 @@ public:
 	void Stop(){				//Motor Stop
 		analogWrite(En,0);
 		digitalWrite(In1,LOW);
-		digitalWrite(In2,LO2);
+		digitalWrite(In2,LOW);
 	}
 	void Forward(int pwm){		//Forward movement
 		analogWrite(En,pwm);
@@ -59,8 +59,8 @@ public:
 	}
 	void Backward(int pwm){		//Backward movement
 		analogWrite(En,pwm);
-		digitalWrite(IN1,HIGH);
-		digitalWrite(IN2,LOW);
+		digitalWrite(In1,HIGH);
+		digitalWrite(In2,LOW);
 	}
 };
 
