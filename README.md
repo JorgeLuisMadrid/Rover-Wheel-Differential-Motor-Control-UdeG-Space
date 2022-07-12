@@ -18,7 +18,7 @@ Where
 - $v$: Linear velocity
 
 Then, a linear equation is calculated to convert the angular velocities to PWM  
-$$P_x = \frac{P_{xmax}*\omega_x}{\omega_{xmax}}$$
+$$P_x(\omega_x) = \frac{P_{xmax}*\omega_x}{\omega_{xmax}}$$
 Where
 - $P_x$: Pwm value of the $x$ wheel
 - $P_{xmax}$: The maximum value the pwm can take
