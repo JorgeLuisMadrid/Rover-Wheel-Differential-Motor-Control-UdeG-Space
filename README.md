@@ -24,3 +24,6 @@ Where
 - $P_{xmax}$: The maximum value the pwm can take
 - $\omega_x$: Angular velocity of the $x$ wheel
 - $\omega_{xmax}$: The maximum value the angular velocity of the $x$ wheel can take
+
+## ROS packages
+It is necessary to install ``teleop_twist_joy`` package. It could be found [here](https://github.com/ros-teleop/teleop_twist_joy).
